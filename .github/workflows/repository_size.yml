@@ -1,5 +1,5 @@
 name: repository_size
-on: [push]
+# on: [push]
 jobs:
   repository_size:
     runs-on: ubuntu-latest

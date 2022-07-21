@@ -1,5 +1,5 @@
 name: what_time_is_it
-on: [push]
+# on: [push]
 jobs:
   what_time_is_it:
     runs-on: ubuntu-latest
