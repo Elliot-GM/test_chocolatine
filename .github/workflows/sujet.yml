@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-      find . ( -name '*#*' -o -name '*~*' -o -name '*.o' -o -name '*.a' -o -name '*.so' -o -name '*.gcno' -o -name '*.gcda' -o -name '*.gcov' -o -name '*tmp/' )\
-      -printf "%s\n"
+      find . ( -name '*#*' -o -name '*~*' -o -name '*.o' -o -name '*.a' -o -name '*.so' -o -name '*.gcno' -o -name '*.gcda' -o -name '*.gcov' -o -name '*tmp/' ) -printf "%s\n"
 
 # needs
   mirroring:
