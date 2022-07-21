@@ -9,4 +9,5 @@ jobs:
         with:
           fetch-depth: 0
       - name: get repository size
+        run: echo ${BRANCH_NAME}
         run: du -skh --exclude=".git"
