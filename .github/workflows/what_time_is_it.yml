@@ -1,10 +1,9 @@
 name: what_time_is_it
 on: [push]
 jobs:
-  build:
+  what_time_is_it:
     runs-on: ubuntu-latest
     steps:
-      - name: Set current date as env variable
-        run: echo "NOW::$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
-      - name: Echo current date
-        run: echo $NOW
+      - name: set release date
+        run: |
+          echo "RELEASE_DATE=$(date --rfc-3339=date)" >> ${GITHUB_ENV}
