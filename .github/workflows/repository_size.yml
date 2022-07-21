@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get repository size
-        uses: actions/checkout@v3
+        - uses: actions/checkout@v3
           with:
             fetch-depth: 0
-          run: |
+          - run: |
             echo du -skh --exclude=".git"
