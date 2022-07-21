@@ -1,0 +1,12 @@
+name: repository_size
+on: [push]
+jobs:
+  repository_size:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get repository size
+        uses: actions/checkout@v3
+          with:
+            fetch-depth: 0
+          run: |
+            echo du -skh --exclude=".git"
