@@ -10,5 +10,5 @@ jobs:
           fetch-depth: 0
       - name: get repository size
         run: |
-          echo ${GITHUB_BASE_REF}
+          echo ${GITHUB_REF##"/}
           du -skh --exclude=".git"
