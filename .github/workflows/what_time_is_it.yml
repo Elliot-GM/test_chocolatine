@@ -5,5 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: set release date
-        run: |
-          echo "RELEASE_DATE=$(date --rfc-3339=date)" >> ${GITHUB_ENV}
+        run: date
